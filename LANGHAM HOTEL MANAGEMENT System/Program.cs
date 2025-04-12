@@ -106,10 +106,16 @@ namespace Assessment2Task2
                 }
                 finally
                 {
-                    Console.Write("\nWould You Like To Continue(Y/N): ");
-                    ans = Convert.ToChar(Console.ReadLine());
+                    string response;
+                    do
+                    {
+                        Console.Write("\nWould You Like To Continue (Y/N)? ");
+                        response = Console.ReadLine().Trim().ToUpper();
+                    } while (response != "Y" && response != "N");
+
+                    ans = response[0];
                 }
-            } while (ans == 'y' || ans == 'Y');
+            } while (ans == 'Y');
         }
 
         static void AddRooms()
