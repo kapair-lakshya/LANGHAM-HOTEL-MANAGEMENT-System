@@ -1,6 +1,6 @@
 ﻿/*
 Project Name: Langham Hotel Management System
-Author Name: Lakshya Kapair
+Author Name: Bibek K c
 Date: 2025-04-11
 Application Purpose: To manage hotel room allocation, customer details, and save/load data with exception handling and file I/O.
 */
@@ -34,7 +34,7 @@ namespace Assessment2Task2
         public static List<Room> listOfRooms = new List<Room>();
         public static List<RoomAllocation> listOfRoomAllocations = new List<RoomAllocation>();
         public static string filePath;
-        public static string studentId = "764708195"; // Updated with actual student ID
+        public static string studentId = "764707333"; // Updated with actual student ID
         static void Main(string[] args)
         {
             string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
